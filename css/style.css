@@ -1,6 +1,6 @@
 
 
-body{ margin: 0; padding: 0; font-size: 14px; color: #222;}
+body{ margin: 0; padding: 0; font-size: 14px; color: #222; background: #f2f2f2;}
 body,html{ height: 100%; }
 .bodybg{ background: #f2f2f2;}
 /*Header*/
@@ -55,45 +55,12 @@ body,html{ height: 100%; }
 .footer a{ font-size: 14px; color: #656565; text-decoration: none; }
 .footer a:hover{ color: #656565; text-decoration: underline; }
 
-/*Dashboard*/
-.header .navbar-nav{ padding: 10px 0 0 15px;}
-.header .navbar-nav li { padding: 8px 25px; text-transform: uppercase;}
-.header .navbar-nav li a{ padding: 5px; color: #666;}
-.header .navbar-nav li a:hover, .header .navbar-nav li.active a, .header .navbar-nav li.active a:hover, .header .navbar-nav li.active a:focus{ color: #6fda44; background: none; outline: none;}
-.header .navbar-nav.navbar-right li{ padding: 8px 0; }
-.header .navbar-nav.navbar-right li:first-child a{ border-left: 1px #ddd solid; padding-left: 14px;}
-
-
-.dashboard{ padding: 24px 0; }
-.dashboard .date-secton p{ font-size: 14px; color: #222; }
-.dashboard .date-secton .date{ font-size: 14px; color: #666; max-width: 160px; height: 36px; background: #fff; border: 1px #d8d8d8 solid; text-align: center; line-height: 34px; }
-.dashboard .summary-box{ margin: 28px 0; background: #fff; box-shadow: 0 1px 6px rgba(57,73,76,0.35);}
-.dashboard .summary-box h2{ font-size: 20px; color: #222; padding: 16px 46px; background: #f4f4f4; border-bottom: 1px #d8d8d8 solid;}
-.dashboard .summary-box .table-section{ padding: 46px; }
-.dashboard .summary-box .table-section table td{ font-size: 14px; color: #666; padding: 10px;}
-.dashboard .summary-box .table-section table td span{ color: #6fda44; }
-.dashboard .summary-box .table-section table tfoot{ border-top: 1px #d8d8d8 solid;}
-.dashboard .summary-box .table-section table tfoot td{ font-size: 20px; color: #4c4c4c;}
-
-.dashboard .summary-box ul.chart{ margin: 0; padding: 20px 0; list-style: none; }
-.dashboard .summary-box ul.chart li{ display: inline-block; padding: 0 15px; width: 48%; text-align: center; vertical-align: top;}
-.dashboard .summary-box ul.chart li img{ display: inline-block;}
 
 
 
 /*Responsive*/
 @media(max-width: 990px){
 .header .navbar-header{ float: none; text-align: center; }
-.header .navbar .navbar-brand{ margin: 14px 0; }
-.header .navbar-toggle{ margin-top: 17px; background: none; margin-right: 0; border: none; float: left; padding-left: 15px; }
-.header .navbar-toggle:focus{ background: none;}
-.header.inner-header .navbar-brand{ margin-left: -47px;}
-.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{ background: none; }
-.header .navbar-nav{ padding: 0px 0 0 10px; }
-
-.dashboard .summary-box .table-section, .dashboard .summary-box ul.chart{ padding: 20px; }
-.dashboard .summary-box h2{ padding: 16px 30px; }
-
 
 }
 
@@ -105,14 +72,7 @@ body,html{ height: 100%; }
   .login-box .btn-primary{ margin-top: 20px; }
   .login-box .newto{ margin: 50px -15px 0; padding: 30px 15px; }
 
-  .header .navbar-nav li{ padding: 4px 0px; }
-  .header .navbar-nav.navbar-right{ margin-top: 0px; padding-top: 0; }
-  .header .navbar-nav.navbar-right li:first-child a{ padding-left: 6px; border: none; }
-  /*.dashboard .summary-box ul.chart{ display: none; }*/
+  
   
 }
 
-@media(max-width: 414px){
-  .dashboard .summary-box ul.chart li{ display: block; padding: 5px 15px; width: 100%;}
-  .dashboard .date-secton .date{ max-width: 100%; padding: 0 20px; text-align: left; }
-}

@@ -9,7 +9,7 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/dashboard.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -40,10 +40,9 @@
                   <!-- main menu -->
                   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                      <li class="active"><a href="#">Find Work</a></li>
-                      <li><a href="#">My Jobs</a></li>
+                      <li><a href="#">Jobs</a></li>
+                      <li><a href="#">Freelancers</a></li>
                       <li><a href="#">Reports</a></li>
-                      <li><a href="#">Messages</a></li>
                     </ul>
                     <!-- right menu -->
                     <ul class="nav navbar-nav navbar-right">
@@ -58,45 +57,55 @@
             <div class="dashboard">
               <div class="container">
                 <div class="row">
-                  <div class="col-md-9">
-                    <div class="date-secton">
+                  <div class="col-md-12">
+                    <div class="date-filter">
                       <p>Current week, in progress</p>
-                      <div class="date">31-6-2019</div>
-                    </div>
-                    <div class="summary-box">
-                      <h2>Weekly Summary</h2>
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="table-section">
-                            <table width="100%">
-                              <tr>
-                                <td>Timesheet (<span>17:10 hrs</span>)</td>
-                                <td align="right"><span>$220.83</span></td>
-                              </tr>
-                              <tr>
-                                <td>Fixed- price and other </td>
-                                <td align="right">$0.00</td>
-                              </tr>
-                              <tfoot>
-                                <tr>
-                                  <td></td>
-                                  <td align="right">220.83</td>
-                                </tr>
-                              </tfoot>
-                            </table>
-                          </div>
-                        </div>
-                        <div class="col-md-6 hidden-xs">
-                          <ul class="chart">
-                            <li><img src="images/chart1.jpg" class="img-responsive" alt=""></li>
-                            <li><img src="images/chart2.jpg" class="img-responsive" alt=""></li>
-                          </ul>
-                        </div>
+                      <div class="datebox">
+                        <a class="date-perv"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+                        <input type="text" class="form-control date" placeholder="31-6-2019">
                       </div>
+                      <p class="graytext pt15">Updated 1:28 PM. Times based on UTC. <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></p>
                     </div>
                   </div>
                 </div>
               </div>
+
+                <!-- Weekly summary -->
+                <div class="container">
+                  <div class="custom-row">
+                      <div class="summary-box">
+                          <div class="titlebar"><h2>Weekly summary</h2></div>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="table-section">
+                              <table width="100%">
+                                <tr>
+                                  <td>Timesheet (<span>17:10 hrs</span>)</td>
+                                  <td align="right"><span>$220.83</span></td>
+                                </tr>
+                                <tr>
+                                  <td>Fixed- price and other </td>
+                                  <td align="right">$0.00</td>
+                                </tr>
+                                <tfoot>
+                                  <tr>
+                                    <td></td>
+                                    <td align="right">220.83</td>
+                                  </tr>
+                                </tfoot>
+                              </table>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 hidden-xs">
+                            <ul class="chart">
+                              <li><img src="images/chart1.jpg" class="img-responsive" alt=""></li>
+                              <li><img src="images/chart2.jpg" class="img-responsive" alt=""></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
             </div>
         </div>
 
@@ -115,6 +124,8 @@
             
       </div>
     </div>
+
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.min.js"></script>
